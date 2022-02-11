@@ -1,0 +1,151 @@
+body { 
+    font-family: "Inconsolata";
+    font-stretch: extra-expanded
+}
+
+#nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+
+}
+
+#nav p {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#categoryGrid {
+    margin: 0px 1px;
+    display: grid;
+    padding: 50px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "redsq greensq yellowsq"
+    "bluesq purplesq pinksq";
+}
+  
+#redsq {
+    grid-area: redsq;
+    
+}
+#greensq {
+    grid-area: greensq;
+    
+}
+  
+#yellowsq {
+    grid-area: yellowsq;
+
+}
+  
+#bluesq {
+    grid-area: bluesq;
+  
+}
+
+#purplesq {
+    grid-area: purplesq;
+
+}
+
+#pinksq {
+    grid-area: pinksq;
+
+}
+
+.categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+}
+
+
+.footergrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  
+    box-sizing: border-box;
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+
+}
+  
+#tri {
+    background-image: url(images/tri.png);
+    background-repeat: repeat;
+    background-size: 75px;
+}
+
+.footergrid {
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #categoryGrid {
+        margin: 0px 1px;
+        display: grid;
+        padding: 50px;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "redsq" 
+        "greensq" 
+        "yellowsq"
+        "bluesq" 
+        "purplesq"
+        "pinksq";
+    }
+
+    #redsq {
+        grid-area: redsq;
+    }
+    #greensq {
+        grid-area: greensq;
+    }
+      
+    #yellowsq {
+        grid-area: yellowsq;
+    }
+      
+    #bluesq {
+        grid-area: bluesq;
+    }
+    
+    #purplesq {
+        grid-area: purplesq;
+    }
+    
+    #pinksq {
+        grid-area: pinksq;
+    }
+    
+}

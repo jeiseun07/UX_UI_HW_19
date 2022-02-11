@@ -1,0 +1,75 @@
+body { 
+    font-family: "Inconsolata";
+    font-stretch: extra-expanded;
+
+    background-image: url(images/greencr.png)
+}
+
+#nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+
+}
+
+#nav p {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.aboutme h1 {
+    font-size: 35px;
+    font-stretch: extra-condensed;
+}
+
+li {
+    font-size: 25px;
+    margin: 70px
+}
+
+.aboutme {
+    display: grid; 
+    padding: 50px;
+    grid-template-columns: 800px 100px; 
+    grid-template-rows: auto; 
+    gap: 5px 100px; 
+    grid-template-areas: 
+    "desc skills"; 
+
+}
+
+
+
+.footergrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  
+    box-sizing: border-box;
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+
+}
+  
+#tri {
+    background-image: url(images/tri.png);
+    background-repeat: repeat;
+    background-size: 75px;
+}
+
+.footergrid {
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
